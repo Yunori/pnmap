@@ -36,7 +36,7 @@ If you want to do vulnerability scans, I advise you to use:
 - nmap-vulners https://github.com/vulnersCom/nmap-vulners
 
 ```
-python3 pnmap.py -opt "-sV --script=vulners" -t 127.0.0.1
+python3 pnmap.py -opt "-sV --script=vulners/vulners" -t 127.0.0.1
 python3 pnmap.py -opt "-sV --script=vulscan/vulscan" -t 127.0.0.1
 ```
 
