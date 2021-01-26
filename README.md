@@ -8,7 +8,7 @@ Pnmap is a script that simplifies the use of nmap.
 > nmap
 
 
-###Usage
+### Usage
 ```
 python3 pnmap.py [-h] [--options OPTIONS] [--targets TARGETS]
 ```
@@ -25,7 +25,7 @@ There are 3 types of targets:
 
 You need to specify at least one type of target.
 
-###Nmap scripts, and vulnerability scanning
+### Nmap scripts, and vulnerability scanning
 To use nmap scripts, you need to specify the "--script" option in the "--options" argument.
 There is a list of default scripts included with nmap at https://nmap.org/nsedoc/index.html.
 ```
@@ -40,7 +40,7 @@ python3 pnmap.py -opt "-sV --script=vulners/vulners" -t 127.0.0.1
 python3 pnmap.py -opt "-sV --script=vulscan/vulscan" -t 127.0.0.1
 ```
 
-###Scan report
+### Scan report
 At the end of the scan, pnmap will automaticaly generate a report.
 You can open it with your browser. Chrome might block the file, I advise you to read it with Firefox. See [link](https://stackoverflow.com/questions/3828898/can-chrome-be-made-to-perform-an-xsl-transform-on-a-local-file).
 
