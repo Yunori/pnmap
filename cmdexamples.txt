@@ -1,0 +1,13 @@
+Basic Scan
+
+python3 pnmap.py -opt "-iL targetlistexample.txt"
+python3 pnmap.py -opt "-iR 100"
+python3 pnmap.py -t 127.0.0.1
+python3 pnmap.py -t 192.168.0.0/24
+python3 pnmap.py -opt "-6" -t ::1
+
+
+Script / Vulnerability scan
+
+python3 pnmap.py -opt "-sV --script=vulners/vulners" -t 127.0.0.1
+python3 pnmap.py -opt "-sV --script=vulscan/vulscan" -t 127.0.0.1
